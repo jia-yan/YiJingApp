@@ -1,11 +1,11 @@
 <template>
 	<!-- <div id="shouye">shouye</div> -->
-	<swiper :options="swiperOption" ref="mySwiper" @someSwiperEvent="callback">
+	<swiper :options="swiperOption" ref="mySwiper" @someSwiperEvent="callback" class="my-swipe">
 		<!-- slides -->
-		<swiper-slide><img class="swipe-img" src="https://img.alicdn.com/tps/TB1ZS5EJXXXXXaJXVXXXXXXXXXX-730-300.jpg" alt="" style="opacity: 1;"></swiper-slide>
-		<swiper-slide><img class="swipe-img" src="https://gw.alicdn.com/imgextra/i2/1480336/O1CN015bee3l1ELveBLY16t_!!1480336-0-lubanu.jpg" alt="" style="opacity: 1;"></swiper-slide>
-		<swiper-slide><img class="swipe-img" src="https://gw.alicdn.com/imgextra/i4/1445320/O1CN0156Rcxm1pAbda8cOPZ_!!1445320-0-lubanu.jpg" alt="" style="opacity: 1;"></swiper-slide>
-		<swiper-slide><img class="swipe-img" src="https://gw.alicdn.com/imgextra/i4/1460168/O1CN01C4zeqZ1D6z6nRwrmn_!!1460168-0-lubanu.jpg" alt="" style="opacity: 1;"></swiper-slide>
+		<swiper-slide class="my-swiper-slide"><img class="swipe-img" src="https://img.alicdn.com/tps/TB1ZS5EJXXXXXaJXVXXXXXXXXXX-730-300.jpg" alt="" style="opacity: 1;"></swiper-slide>
+		<swiper-slide class="my-swiper-slide"><img class="swipe-img" src="https://gw.alicdn.com/imgextra/i2/1480336/O1CN015bee3l1ELveBLY16t_!!1480336-0-lubanu.jpg" alt="" style="opacity: 1;"></swiper-slide>
+		<swiper-slide class="my-swiper-slide"><img class="swipe-img" src="https://gw.alicdn.com/imgextra/i4/1445320/O1CN0156Rcxm1pAbda8cOPZ_!!1445320-0-lubanu.jpg" alt="" style="opacity: 1;"></swiper-slide>
+		<swiper-slide class="my-swiper-slide"><img class="swipe-img" src="https://gw.alicdn.com/imgextra/i4/1460168/O1CN01C4zeqZ1D6z6nRwrmn_!!1460168-0-lubanu.jpg" alt="" style="opacity: 1;"></swiper-slide>
 		
 		<div class="swiper-pagination" slot="pagination"></div>
 	</swiper>
@@ -33,10 +33,24 @@
 					autoplay: true,//可选选项，自动滑动
 					initialSlide :0,//设置为2后，Swiper初始化时activeSlide成了第三个
 					direction : 'horizontal',//可设置水平(horizontal)或垂直(vertical)  可使用swiper.changeDirection()方法动态切换方向
-					height: 120,//你的slide高度
+					//height: 'auto',//你的slide高度
+					height: 120,
 					autoplay : {
 					  delay:2000
 					},
+					loopedSlides: 5,//在loop模式下使用slidesPerview:'auto'，还需使用该参数设置所要用到的loop个数(一般设置大于可视slide个数2个即可)
+					effect : 'coverflow',//切换效果
+					slidesPerView: '1.2',//设置slider容器能够同时显示的slides数量  可以为数字【数字可以位小数】 auto 
+					centeredSlides: true,//true 滑块汇聚中
+					spaceBetween: '15%',//slide 之间的距离
+					coverflowEffect: {
+					  rotate: 0,
+					  stretch: 0,//每个slide之间的拉升值 值越大靠得越近
+					  depth: 200,//slide位置的深度 值越大看起来越小
+					  modifier: 1,//depth rotate stretch 的倍率
+					  slideShadows : false//开启slide阴影
+					},
+					
 					speed:300,//切换速度，即slider自动滑动开始到结束的时间（单位ms），也是触摸滑动时释放至贴合的时间 类似于过度的时间
 					// width: 100,
 					autoHeight: false, //高度随内容变化
@@ -79,8 +93,15 @@
 </script>
 
 <style scoped="scoped">
+	.my-swipe{
+		margin-top: 3px;
+	}
+	/* .my-swiper-slide{
+		border-radius: 5px;
+	} */
 	.swipe-img{
 		height: 120px;
 		width: 100%;
+		border-radius: 5px;
 	}
 </style>

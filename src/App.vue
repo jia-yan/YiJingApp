@@ -116,6 +116,7 @@
 	#app{
 		width: 100%;
 		height: auto;
+		background-color: #FFFFFF;
 	}
 	#app #content{
 		position: relative;
