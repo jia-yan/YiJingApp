@@ -115,13 +115,18 @@
 	/*解决 引入报错mui.js?8ec1:6451 [Intervention] Unable to preventDefault inside passive event listener due to target being treated as passive. See https://www.chromestatus.com/features/5093566007214080 */
 	#app{
 		width: 100%;
-		height: auto;
+		/* height: auto; */
+		height: 100%;
 		background-color: #FFFFFF;
 	}
 	#app #content{
-		position: relative;
+		/* position: relative; */
+		position: fixed;/*这个不能用相对定位，否则超出的内容无法显示*/
 		top: 49.8px;
 		width: 100%;
+		/* height: auto; */
+		height: 100%;
+		/* overflow-y: scroll; */
 	}
 	#app .drawer-content{
 		width: 100%;
