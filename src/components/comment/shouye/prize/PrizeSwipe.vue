@@ -12,37 +12,37 @@
 			<swiper-slide class="my-swiper-slide">
 				<img class="swipe-img" src="https://gw.alicdn.com/imgextra/i2/1480336/O1CN015bee3l1ELveBLY16t_!!1480336-0-lubanu.jpg" alt="" style="opacity: 1;">
 				<div class="my-text-swipe">
-					111111
+					222222
 				</div>
 			</swiper-slide>
 			<swiper-slide class="my-swiper-slide">
 				<img class="swipe-img" src="https://gw.alicdn.com/imgextra/i4/1445320/O1CN0156Rcxm1pAbda8cOPZ_!!1445320-0-lubanu.jpg" alt="" style="opacity: 1;">
 				<div class="my-text-swipe">
-					111111
+					333333
 				</div>
 			</swiper-slide>
 			<swiper-slide class="my-swiper-slide">
 				<img class="swipe-img" src="https://gw.alicdn.com/imgextra/i4/1460168/O1CN01C4zeqZ1D6z6nRwrmn_!!1460168-0-lubanu.jpg" alt="" style="opacity: 1;">
 				<div class="my-text-swipe">
-					111111
+					444444
 				</div>
 			</swiper-slide>
 			<swiper-slide class="my-swiper-slide">
 				<img class="swipe-img" src="https://gw.alicdn.com/imgextra/i2/1480336/O1CN015bee3l1ELveBLY16t_!!1480336-0-lubanu.jpg" alt="" style="opacity: 1;">
 				<div class="my-text-swipe">
-					111111
+					555555
 				</div>
 			</swiper-slide>
 			<swiper-slide class="my-swiper-slide">
 				<img class="swipe-img" src="https://gw.alicdn.com/imgextra/i4/1445320/O1CN0156Rcxm1pAbda8cOPZ_!!1445320-0-lubanu.jpg" alt="" style="opacity: 1;">
 				<div class="my-text-swipe">
-					111111
+					666666
 				</div>
 			</swiper-slide>
 			<swiper-slide class="my-swiper-slide">
 				<img class="swipe-img" src="https://gw.alicdn.com/imgextra/i4/1460168/O1CN01C4zeqZ1D6z6nRwrmn_!!1460168-0-lubanu.jpg" alt="" style="opacity: 1;">
 				<div class="my-text-swipe">
-					111111
+					77777777
 				</div>
 			</swiper-slide>
 			

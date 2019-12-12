@@ -14,6 +14,11 @@
 			<div id="prize-contain">
 				<prize-title></prize-title>
 				<prize-swipe></prize-swipe>
+				<div>
+					<work-contain></work-contain>
+					<work-contain></work-contain>
+					<work-contain></work-contain>
+				</div>
 			</div>
 			
 			<div id="blank"></div>
