@@ -1,7 +1,7 @@
 <template>
 	<!-- //一定不要将mint-ui组件放到root下例如千万不要其直接放到template下 -->
-	<div class="tabbar">
-		<nav class="mui-bar mui-bar-tab">
+	<div class="tabbar my-tabbar">
+		<nav class="mui-bar mui-bar-tab my-mui-bar">
 			<router-link class="mui-tab-item" to="/shouye">
 				<span class="mui-icon mui-icon-home"></span>
 				<span class="mui-tab-label">首页</span>
@@ -34,6 +34,9 @@
 </script>
 
 <style scoped="scoped">
+	.my-tabbar .my-mui-bar{
+		background-color: #FFFFFF;
+	}
 	.tabbar .mui-bar .publish{
 		/* display: block; */
 		width: 36px;

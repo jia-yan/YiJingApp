@@ -1,13 +1,30 @@
 <template> 
 	<div id="shouye">
 		<shouye-swipe></shouye-swipe>
-		<work-title></work-title>
-		<div id="work-contain">
+		<!-- <work-title></work-title> -->
+		<div id="content">
+			<div id="work-contain">
+				<work-title></work-title>
+				<work-contain></work-contain>
+				<work-contain></work-contain>
+				<work-contain></work-contain>
+				<!-- <div id="blank"></div> -->
+			</div>
+			
+			<div id="prize-contain">
+				<prize-title></prize-title>
+				<prize-swipe></prize-swipe>
+			</div>
+			
+			<div id="blank"></div>
+		</div>
+		<!-- <div id="work-contain">
 			<work-contain></work-contain>
 			<work-contain></work-contain>
 			<work-contain></work-contain>
 			<div id="blank"></div>
-		</div>
+		</div> -->
+		
 	</div>
 	
 </template>
@@ -16,13 +33,17 @@
 	import WorkTitle from './work/WorkTitle.vue'
 	import ShouyeSwipe from './contain/ShouyeSwipe.vue'
 	import WorkContain from './work/WorkContain.vue'
+	import PrizeTitle from './prize/PrizeTitle.vue'
+	import PrizeSwipe from './prize/PrizeSwipe.vue'
 	
 	export default {
 		name: 'ShouYe',
 		components: {		
 			WorkTitle,
 			ShouyeSwipe,
-			WorkContain
+			WorkContain,
+			PrizeTitle,
+			PrizeSwipe
 		}
 	}
 </script>
