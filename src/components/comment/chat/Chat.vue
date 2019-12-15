@@ -1,12 +1,13 @@
 <template>
 	<div class="chat-content" id="chat">
-		<div class="my-mt">
+		<!-- <div class="my-mt">
 			<mt-search
 				class="my-mt-search"
 			  cancel-text="取消"
 			  placeholder="搜索">
 			</mt-search>
-		</div>	
+		</div>	 -->
+		<search></search>
 		<chat-swipe></chat-swipe>
 		<div id="occupation">
 			<div class="occupation">职圈</div>
@@ -70,6 +71,7 @@
 	import ChatSwipe from './contain/ChatSwipe.vue'
 	import CardView from './contain/CardView.vue'
 	import NewsRead from './contain/NewsRead.vue'
+	import Search from './contain/Search.vue'
 	export default {
 		name: 'Chat',
 		data() {
@@ -80,7 +82,8 @@
 		components: {
 			ChatSwipe,
 			CardView,
-			NewsRead
+			NewsRead,
+			Search
 		}
 	}
 </script>
@@ -96,7 +99,7 @@
 		width: 100%;
 		height: 120px;
 	}
-	.chat-content{
+	/* .chat-content{
 		
 	}
 	.chat-content .my-mt{
@@ -130,7 +133,7 @@
 		margin-left: 3px;
 		margin-right: 10px;
 	/* 	background-color: #E5E5EE; */
-	}
+	/*} */
 	#occupation{
 		display: flex;
 		justify-content: space-around;
