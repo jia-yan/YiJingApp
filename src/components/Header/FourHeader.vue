@@ -1,6 +1,6 @@
 <template>
 	<div id="header">
-		<header id="header" class="mui-bar mui-bar-nav">
+		<!-- <header id="header" class="mui-bar mui-bar-nav">
 			<a class="mui-icon mui-icon-bars mui-pull-left"></a>
 			<h1 class="mui-title">第四页</h1>
 			<a class="mui-icon mui-icon-extra mui-icon-extra-sweep mui-pull-right">
@@ -8,7 +8,7 @@
 				</mt-actionsheet>
 			</a>
 			
-		</header>
+		</header> -->
 	</div>
 </template>
 
