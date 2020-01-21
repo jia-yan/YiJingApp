@@ -1,6 +1,6 @@
 <template>
 	<div class="con">
-		<div class="left"><img src="../images/cbd.jpg" alt="" /></div>
+		<div class="left-newsread"><img src="../images/cbd.jpg" alt="" /></div>
 		<div class="right">
 			<div class="title">风雨人生路，冷暖心自知</div>
 			<div class="wenz">
@@ -45,15 +45,15 @@
 	display: flex;
 	justify-content: flex-start;
 }
-.con .left {
+.con .left-newsread{
 	width: 130px;
 	margin-left: 5px;
 	/*vertical-align: middle;*/
-	display: flex;
-	align-items: center;
+	/* display: flex;
+	align-items: center; */
 	height: 120px;
 }
-.con .left img {
+.con .left-newsread img {
 	width: 130px;
 	height: 110px;
 }

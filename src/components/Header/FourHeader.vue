@@ -1,14 +1,17 @@
 <template>
-	<div id="header">
-		<!-- <header id="header" class="mui-bar mui-bar-nav">
+	<!-- <header id="header" class="mui-bar mui-bar-nav">
 			<a class="mui-icon mui-icon-bars mui-pull-left"></a>
 			<h1 class="mui-title">第四页</h1>
 			<a class="mui-icon mui-icon-extra mui-icon-extra-sweep mui-pull-right">
 				<mt-actionsheet>
 				</mt-actionsheet>
-			</a>
-			
-		</header> -->
+			</a>	
+	</header> -->
+	<div id="header">
+		<!--  -->
+		<header id="header" class="mui-bar mui-bar-nav">
+				<a class="mui-icon mui-icon-extra mui-icon-extra-sweep mui-pull-right"></a>	
+		</header>
 	</div>
 </template>
 
@@ -31,6 +34,15 @@
 </script>
 
 <style scoped="scoped">
+	#header{
+		background-color: #FFFFFF;
+	}
+	.mui-bar-nav{
+		box-shadow: 0 1px 6px #FFFFFF;
+	}
+	.mui-icon{
+		color: #000000;
+	}
 	.mui-bar .mui-pull-left .mui-icon {
 		padding-right: 5px;
 		font-size: 28px;
