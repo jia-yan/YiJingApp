@@ -1,6 +1,6 @@
 <template>
 	<div id="header">
-		<header id="header" class="mui-bar mui-bar-nav">
+		<header id="header-son" class="mui-bar mui-bar-nav">
 			<a class="mui-icon mui-icon-bars mui-pull-left"></a>
 			<h1 class="mui-title">发布</h1>
 			<a class="mui-icon mui-icon-extra mui-icon-extra-sweep mui-pull-right">
@@ -31,6 +31,9 @@
 </script>
 
 <style scoped="scoped">
+	#header-son{
+		background-color: #FFFFFF;
+	}
 	.mui-bar .mui-pull-left .mui-icon {
 		padding-right: 5px;
 		font-size: 28px;
@@ -41,6 +44,9 @@
 	}
 	.mui-bar .mui-btn-link {
 		top: 1px;
+	}
+	.mui-icon{
+		color: #2b85e4;
 	}
 </style>
 

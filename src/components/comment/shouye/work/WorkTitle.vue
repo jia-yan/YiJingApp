@@ -22,12 +22,13 @@
 
 <style scoped="scoped">
 	#work-title{
-		height: 2.5rem;
+		height: 1.2rem;
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
 		padding: 8px 0;
 		border-top: 1px solid #EEEEEE;
+		background-color: #FFFFFF;
 	}
 	#work-title .title{
 		width: 100px;

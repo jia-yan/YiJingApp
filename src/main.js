@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 
-
+// import './../public/aui.2.0.css'
 //导入mui
 import './assets/mui/css/mui.min.css'
 import './assets/mui/css/icons-extra.css'
@@ -28,6 +28,22 @@ Vue.component(DrawerLayout.name, DrawerLayout)
 import ViewUI from 'view-design'
 import 'view-design/dist/styles/iview.css'
 Vue.use(ViewUI);
+
+import MuseUI from 'muse-ui'
+import 'muse-ui/dist/muse-ui.css'
+Vue.use(MuseUI)
+
+// import 'vue-ydui/dist/ydui.base.css'
+
+import $ from 'jquery'
+
+import Router from 'vue-router'
+Vue.use(Router)
+const originalPush = Router.prototype.push
+Router.prototype.push = function push(location) {
+  return originalPush.call(this, location).catch(err => err)
+}
+
 
 Vue.config.productionTip = false
 

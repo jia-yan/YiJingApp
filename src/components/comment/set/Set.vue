@@ -34,25 +34,25 @@
 		<div class="list-box">
 			<div class="list-box-grounp">
 				<ul class="mui-table-view">					
-				    <li class="mui-table-view-cell list-row">
+				    <li class="mui-table-view-cell list-row" @click="navToggleSon({ path: '/makein'})">
 				      <a class="mui-navigate-right">
 								<span class="mui-icon mui-icon-compose"></span>
 								<span>我的创作</span>
 							</a>
 				    </li>
-				    <li class="mui-table-view-cell">							
+				    <li class="mui-table-view-cell" @click="navToggleSon({ path: '/Mytask'})">							
 				      <a class="mui-navigate-right">
 				      	<span class="mui-icon mui-icon-compose"></span>
-				      	<span>我的收藏</span>
+				      	<span>我的任务</span>
 				      </a>
 				    </li>
-				    <li class="mui-table-view-cell">
+				    <li class="mui-table-view-cell" @click="navToggleSon({ path: '/support'})">
 				      <a class="mui-navigate-right">
 				      	<span class="mui-icon mui-icon-compose"></span>
 				      	<span>我的点赞</span>
 				      </a>
 				    </li>
-						<li class="mui-table-view-cell">
+						<li class="mui-table-view-cell" @click="navToggleSon({ path: '/myjoin'})">
 						   <a class="mui-navigate-right">
 						   	<span class="mui-icon mui-icon-compose"></span>
 						   	<span>我的加入</span>
@@ -62,13 +62,13 @@
 			</div>
 			<div class="list-box-grounp">
 				<ul class="mui-table-view">
-				    <li class="mui-table-view-cell">
+				    <li class="mui-table-view-cell" @click="navToggleSon({ path: '/myclass'})">
 				      <a class="mui-navigate-right">
 				      	<span class="mui-icon mui-icon-compose"></span>
 				      	<span>我的课程</span>
 				      </a>
 				    </li>
-				    <li class="mui-table-view-cell">
+				    <li class="mui-table-view-cell" @click="navToggleSon({ path: '/myaccount'})">
 							<a class="mui-navigate-right">
 								<span class="mui-icon mui-icon-compose"></span>
 								<span>我的账户</span>
@@ -81,13 +81,19 @@
 				    <li class="mui-table-view-cell">
 				      <a class="mui-navigate-right">
 				      	<span class="mui-icon mui-icon-compose"></span>
-				      	<span>消息中心</span>
+				      	<span>反馈与帮助</span>
 				      </a>
 				    </li>
+						<li class="mui-table-view-cell" @click="navToggleSon({ path: '/review'})">
+						  <a class="mui-navigate-right">
+						  	<span class="mui-icon mui-icon-compose"></span>
+						  	<span>评论留言</span>
+						  </a>
+						</li>
 				    <li class="mui-table-view-cell">
 				      <a class="mui-navigate-right">
 				      	<span class="mui-icon mui-icon-compose"></span>
-				      	<span>反馈与帮助</span>
+				      	<span>消息中心</span>
 				      </a>
 				    </li>
 				</ul>
@@ -101,6 +107,16 @@
 		name: 'Set',
 		components: {
 			
+		},
+		methods: {
+			// navToggleSon() {
+			// 	this.$emit('navClick')
+			// 	this.$router.push({ path: '/myjoin'})
+			// },
+			navToggleSon(router) {
+				this.$emit('navClick')
+				this.$router.push(router)
+			},
 		}
 	}
 </script>

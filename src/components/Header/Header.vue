@@ -69,4 +69,7 @@
 	.mui-bar .mui-btn-link {
 		top: 1px;
 	}
+	.mui-icon{
+		color: #2b85e4;
+	}
 </style>

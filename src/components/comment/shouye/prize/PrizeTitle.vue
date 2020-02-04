@@ -22,12 +22,13 @@
 
 <style scoped="scoped">
 	#prize-title{
-		height: 2.5rem;
+		height: 1.2rem;
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
 		padding: 30px 0 24px 0;
 		border-top: 1px solid #EEEEEE;
+		background-color: #FFFFFF;
 	}
 	#prize-title .title{
 		width: 170px;

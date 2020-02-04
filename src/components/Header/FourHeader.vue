@@ -9,7 +9,7 @@
 	</header> -->
 	<div id="header">
 		<!--  -->
-		<header id="header" class="mui-bar mui-bar-nav">
+		<header id="header-son" class="mui-bar mui-bar-nav">
 				<a class="mui-icon mui-icon-extra mui-icon-extra-sweep mui-pull-right"></a>	
 		</header>
 	</div>
@@ -35,7 +35,10 @@
 
 <style scoped="scoped">
 	#header{
-		background-color: #FFFFFF;
+		background-color: #fafafa;
+	}
+	#header-son{
+		background-color: #fafafa;
 	}
 	.mui-bar-nav{
 		box-shadow: 0 1px 6px #FFFFFF;

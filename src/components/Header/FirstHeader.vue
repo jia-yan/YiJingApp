@@ -82,4 +82,7 @@ export default {
 	width: 78%;
 	overflow: hidden;
 }
+.mui-icon{
+		color: #2b85e4;
+	}
 </style>

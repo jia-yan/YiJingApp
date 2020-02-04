@@ -90,9 +90,10 @@
 	justify-content: space-between;
 	color: #a9aaa9;
 	font-size: 10px;
+	padding-top: 10px;
 }
 .con .right .dibu .yi {
-	margin-right: 20px;
+	margin-right: 8px;
 }
 .con .right .dibu .er {
 	margin: 0 10px;
