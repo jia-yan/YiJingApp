@@ -27,6 +27,7 @@ import Support from '../components/comment/set/contain/Support.vue'
 import MyClass from '../components/comment/set/contain/MyClass.vue'
 import MyTask from '../components/comment/chat/contain/MyTask.vue'
 import MyAccount from '../components/comment/set/contain/MyAccount.vue'
+import YinHangCard from '../components/comment/set/contain/YinHangCard.vue'
 
 import FirstHeader from './../components/Header/FirstHeader.vue'
 import SecendHeader from './../components/Header/SecendHeader.vue'
@@ -219,7 +220,13 @@ const routes = [
 		components: {
 			//header: FiveHeader,
 			default: MyAccount
-		}
+		},
+		children: [
+			{
+			  path: "yinhangcard",
+			  component: YinHangCard
+			},
+		]
 	}
 ]
 
