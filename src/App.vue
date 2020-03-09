@@ -143,6 +143,7 @@
 		touch-action: none; 
 		touch-action: pan-y;
 	}
+	
 	/*解决 引入报错mui.js?8ec1:6451 [Intervention] Unable to preventDefault inside passive event listener due to target being treated as passive. See https://www.chromestatus.com/features/5093566007214080 */
 	/* 动画效果 */
 	.slide-right-enter-active,

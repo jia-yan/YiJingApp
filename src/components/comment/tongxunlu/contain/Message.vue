@@ -1,5 +1,5 @@
 <template>
-	<div class="con" onclick="">
+	<div class="con" @click="navToggleSon()">
 		<div class="left"><img src="../../../../../public/images/cbd.jpg" alt="" /></div>
 		<div class="right">
 			<div class="left-1">
@@ -11,7 +11,10 @@
 				<div class="xiaoxi">3</div>
 			</div>
 		</div>
+		
+		
 	</div>
+	
 </template>
 
 <script>
@@ -19,11 +22,20 @@
 		name: 'Search',
 		components: {
 			
+		},
+		methods: {
+			navToggleSon() {
+				this.$emit('navClick')
+			},
+			// chatwith(router) {
+			// 	this.$router.push(router)
+			// }
 		}
 	}
 </script>
 
 <style>
+
 .con {
 	width: 100%;
 	height: 80px;

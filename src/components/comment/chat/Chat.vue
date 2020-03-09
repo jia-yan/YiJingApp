@@ -99,41 +99,7 @@
 		width: 100%;
 		height: 120px;
 	}
-	/* .chat-content{
-		
-	}
-	.chat-content .my-mt{
-		display: flex;
-		justify-content: center;
-		height: 36px;
-		margin-bottom: 8px;
-	}
-	.chat-content .my-mt-search{
-		width: 96%;
-		height: 36px;
-		border-radius: 50px;
-	}
-	.chat-content .my-mt-search >>> .mint-searchbar{
-		padding: 0!important;
-		height: 36px!important;
-		background-color: #eae7e7;
-	}
-	.chat-content .my-mt-search >>> .mint-searchbar .mint-searchbar-inner{
-		height: 36px;
-		border: 1px solid #EEE;
-	}
-	.chat-content >>> .mint-searchbar-core{
-		margin: 0;
-		background-color: #FFFFFF;
-	}
-	.chat-content >>> .mint-searchbar-inner .mintui-search{
-		font-size: 16px;
-	}
-	.chat-content >>> .mint-searchbar-cancel{
-		margin-left: 3px;
-		margin-right: 10px;
-	/* 	background-color: #E5E5EE; */
-	/*} */
+	
 	#occupation{
 		display: flex;
 		justify-content: space-around;

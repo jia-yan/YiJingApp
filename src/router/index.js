@@ -28,6 +28,7 @@ import MyClass from '../components/comment/set/contain/MyClass.vue'
 import MyTask from '../components/comment/chat/contain/MyTask.vue'
 import MyAccount from '../components/comment/set/contain/MyAccount.vue'
 import YinHangCard from '../components/comment/set/contain/YinHangCard.vue'
+import ChatWith from '../components/comment/tongxunlu/contain/ChatWith.vue'
 
 import FirstHeader from './../components/Header/FirstHeader.vue'
 import SecendHeader from './../components/Header/SecendHeader.vue'
@@ -72,7 +73,13 @@ const routes = [
 			header: ThirdHeader,
 			tabbar: TabBar,
 			default: TongXun
-		}
+		},
+		// children: [
+		// 	{
+		// 	  path: "chatwith",
+		// 	  component: ChatWith
+		// 	},
+		// ]
 	},
 	{
 	  path: '/set',
@@ -212,6 +219,14 @@ const routes = [
 		components: {
 			//header: FiveHeader,
 			default: MyTask
+		}
+	},
+	{
+	  path: '/tongxunlu/chatwith',
+	  name: 'ChatWith',
+		components: {
+			//header: FiveHeader,
+			default: ChatWith
 		}
 	},
 	{
